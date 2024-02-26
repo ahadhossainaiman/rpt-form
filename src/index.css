@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.ant-select-selector{
+    border: none !important;
+    border-color: transparent !important;
+}

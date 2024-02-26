@@ -206,7 +206,7 @@ const IndividualInformationDotTest = () => {
 
               <Form.Item
                 label="Company Address "
-                name="companyAddress"
+                name="individualCompanyAddress"
                 className="flex-1"
                 rules={[
                   {
