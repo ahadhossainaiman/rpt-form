@@ -1,7 +1,11 @@
 import { Button, Checkbox, DatePicker, Form, Input, Select } from "antd";
 import { Option } from "antd/es/mentions";
+import { FaArrowRightLong } from "react-icons/fa6";
 
-const CompanyInformation = ({ handleCompanyInformation, handleCompanyInformationFailed }) => {
+const CompanyInformation = ({
+  handleCompanyInformation,
+  handleCompanyInformationFailed,
+}) => {
   return (
     <div className="shadow-lg rounded-lg">
       <h1 className="bg-[#3BA6F6] text-[24px] pl-[24px] text-white rounded-tl-lg rounded-tr-lg py-[15px]">
@@ -70,7 +74,7 @@ const CompanyInformation = ({ handleCompanyInformation, handleCompanyInformation
               <span className="text-[#661C17] text-[12px]">Note: **Physical address required - P.O. boxes not accepted**</span>
             </Form.Item> */}
 
-<Form.Item
+            <Form.Item
               label="Company Address"
               name="company-address"
               className="flex-1 w-[100%]"
@@ -82,20 +86,20 @@ const CompanyInformation = ({ handleCompanyInformation, handleCompanyInformation
               ]}
             >
               <div className="flex flex-col">
-                
-              <Input
-                placeholder="*Required Field"
-                className="p-4 flex-1 bg-[#F4F1F1]
+                <Input
+                  placeholder="*Required Field"
+                  className="p-4 flex-1 bg-[#F4F1F1]
               rounded
               justify-start 
               border-none
               mt-[12px]
               items-center 
               gap-4 inline-flex outline-none focus:border-none focus:bg-[#F4F1F1] hover:bg-[#F4F1F1]"
-              />
-              <span className="text-[#661C17] text-[12px]">Note: Your certificate will be sent this email</span>
+                />
+                <span className="text-[#661C17] text-[12px]">
+                  Note: Your certificate will be sent this email
+                </span>
               </div>
-            
             </Form.Item>
           </div>
 
@@ -126,7 +130,7 @@ const CompanyInformation = ({ handleCompanyInformation, handleCompanyInformation
               <span  className="text-[#661C17] text-[12px]">Note: **The Clearinghouse is a federal mandate of the Federal Motor Carrier Safety Administration (FMCSA). The Clearinghouse is not regulated by any DOT agency besides FMCSA**</span>
             </Form.Item> */}
 
-<Form.Item
+            <Form.Item
               label="Agency"
               name="c-agency"
               className="flex-1"
@@ -273,7 +277,7 @@ const CompanyInformation = ({ handleCompanyInformation, handleCompanyInformation
             </Form.Item>
           </div>
           <div className="flex gap-5">
-          <Form.Item
+            <Form.Item
               label="Primary Cell Phone #"
               name="primaryPhone"
               className="flex-1"
@@ -306,7 +310,7 @@ const CompanyInformation = ({ handleCompanyInformation, handleCompanyInformation
                 },
               ]}
             >
-               <Select
+              <Select
                 className="p-7 bg-[#F4F1F1]
               rounded 
               mt-[12px]
@@ -355,23 +359,21 @@ const CompanyInformation = ({ handleCompanyInformation, handleCompanyInformation
               ]}
             >
               <div className="flex flex-col">
-                
-              <Input
-                placeholder="*Required Field"
-                className="p-4 flex-1 bg-[#F4F1F1]
+                <Input
+                  placeholder="*Required Field"
+                  className="p-4 flex-1 bg-[#F4F1F1]
               rounded w-[49%] 
               justify-start 
               border-none
               mt-[12px]
               items-center 
               gap-4 inline-flex outline-none focus:border-none focus:bg-[#F4F1F1] hover:bg-[#F4F1F1]"
-              />
-              <span className="text-[#661C17] text-[12px]">Note: Your certificate will be sent this email</span>
+                />
+                <span className="text-[#661C17] text-[12px]">
+                  Note: Your certificate will be sent this email
+                </span>
               </div>
-            
             </Form.Item>
-            
-                
           </div>
           <div className="">
             <Form.Item
@@ -399,8 +401,8 @@ const CompanyInformation = ({ handleCompanyInformation, handleCompanyInformation
           </div>
 
           <Form.Item>
-            <Button className="bg-[#3BA6F6]" type="primary" htmlType="submit">
-              Continue
+            <Button className="bg-[#3BA6F6] px-[30px] py-[20px] text-[18px] flex items-center gap-3 justify-center" type="primary" htmlType="submit" >
+              Continue <FaArrowRightLong />
             </Button>
           </Form.Item>
         </Form>
